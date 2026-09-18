@@ -14,8 +14,9 @@ void print(int a[], int n)
 	printf("\n");
 }
 
-void insertion_sort(int a[], int n){
-	for(int n; i<n ; i++){
+void insertion_sort(int a[], int n)
+{
+	for(int i=1; i<n ; i++){
 		int key = a[i];
         int j=i-1;
         while (j>=0 && a[j]>key)
@@ -27,10 +28,10 @@ void insertion_sort(int a[], int n){
     }
 }
 
-void selection_sort(int a[], int n){
-	for(int n; i<n; i++){
-		for(int i=0; i<n-1; i++)
-    {
+void selection_sort(int a[], int n)
+{
+	for(int i=0; i<n-1; i++)
+	{
         int min=i;
         for(int j=i+1; j<n; j++)
         {
@@ -40,12 +41,12 @@ void selection_sort(int a[], int n){
             } }
         int temp=a[i];
         a[i]=a[min];
-        a[min]=temp;
-	}        
+        a[min]=temp;    
 }
 }
 
-void bubble_sort(int a[], int n){
+void bubble_sort(int a[], int n)
+{
 	for(int i=0; i<n-1; i++)
     {
         for(int j=0; j<n-1-i; j++)
